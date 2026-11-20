@@ -1,6 +1,7 @@
 name: Validate production promotion source
 
 on:
+  workflow_dispatch:
   push:
     branches: [verify/promotion-source]
   pull_request_target:
@@ -15,7 +16,7 @@ concurrency:
 
 jobs:
   registration:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     timeout-minutes: 2
     permissions: {}
