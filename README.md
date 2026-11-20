@@ -6,3 +6,5 @@ third-party license notices.
 
 The standalone node dashboard source is available at
 https://github.com/bdag-community/node-dashboard.
+
+<!-- Branch protection check. -->
