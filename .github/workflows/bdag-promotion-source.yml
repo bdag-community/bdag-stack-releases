@@ -89,3 +89,5 @@ jobs:
             -f context=bdag/promotion-source -f state="$state" \
             -f description="$description" -f target_url="$target" >/dev/null
           [[ "$state" == success ]]
+
+# Registration probe on the current default branch.
